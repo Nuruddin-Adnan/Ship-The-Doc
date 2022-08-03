@@ -1,0 +1,70 @@
+.feedback-card{
+   height: 100%;
+   border-radius: 15px;
+   padding: 20px;
+   min-height: 345px;
+   background: #fff;
+
+   .title{
+      color: #025ea1;
+      font-weight: 600;
+   }
+
+   .fa-star{
+      color: #ffcc32;
+   }
+}
+
+.btn-secondary{
+   background: #fff;
+   color: #000;
+}
+
+.package{
+   margin-top: -40px;
+   margin-right: -40px;
+   .package-card{
+      background: #fff;
+      border-radius: 3px;
+      padding: 15px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+      margin-bottom: 5px;
+
+      h5{
+         font-size: 18px;
+         white-space: nowrap;
+      }
+
+      .price{
+         font-size: 21px;
+         color: #025ea1;
+         font-weight: 700;
+
+         span{
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+         }
+      }
+
+      &.check{
+         position: relative;
+
+         &::after{
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: url(../images/check.png) no-repeat center center/contain;
+            top: -10px;
+            right: -10px;
+            border-radius: 50%;
+         }
+      }
+   }
+
+   @media screen and (max-width: 1199px){
+      margin: 0;
+      margin-top: 10px;      
+   }
+}

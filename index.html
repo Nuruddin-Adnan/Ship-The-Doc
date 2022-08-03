@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Ship The Doc </title>
+  <link rel='shortcut icon' href='assets/images/fav-icon.png' type='image/x-icon'>
+  <!-- fonrawesom -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  <!-- countrySelect -->
+  <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
+  <!-- swiper -->
+  <link rel="stylesheet" href="assets/vendor/country-picker-flags/css/countrySelect.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <!-- custom css sheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <nav class="navbar navbar-expand-xl align-items-center navbar-light">
+      <div class="container">
+        <div>
+          <a class="navbar-brand" href="#"><img src="assets/images/brand-logo.png" alt="brand-icon" class="img-fluid"></a>
+          <div class="search-box-wrapper d-none d-md-inline-block d-inline-block ms-4">
+            <form>
+              <div class="d-flex align-items-center search">
+                <i class="far fa-search me-2"></i>
+                <input type="text" placeholder="Track My Package">
+              </div>
+            </form>
+          </div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><i class="fal fa-user-headset me-2"></i>Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fal fa-calculator me-2"></i>Quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="far fa-globe me-2"></i>English</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fal fa-user-circle me-2"></i>Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-yellow">Sign Up Free</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>  
+  <!-- header -->
+
+
+  <!-- banner-main -->
+  <section class="banner-main py-lg-5 py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="description">
+            <h1 class="section-heading fs-3">The Best Way to Ship Documents Online</h1>
+            <p class="py-3">ShipTheDoc offers the best rates from top carriers and everything
+              you need for shipping documents worldwide in one platform.<br class="d-block d-xl-none"><br class="d-block d-xl-none">
+
+              Set up in seconds. Save time and money on shippng.</p>
+            <a href="#" class="btn btn-yellow">Start Shipping Now</a>
+          </div>
+        </div>
+        <div class="col-lg-6 pt-3 pt-lg-0">
+          <div class="image h-100 w-100 text-center">
+            <img src="assets/images/main-banner-image.png" alt="main-banner-images" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- banner-main -->
+
+  <!-- package delivery -->
+  <section class="package-delivery py-5">
+    <div class="container">
+      <div class="row align-items-center gx-0 gx-xl-5 gy-xl-0 gy-5">
+        <div class="col-xl-6  pe-0 pe-xl-5 order-xl-1 order-2">
+          <div class="h-100 w-100 pe-0 pe-xl-5">
+            <form class="w-100 ">
+              <div class="pe-0 pe-xl-4 w-100">
+                <div class="p-4 bg-white rounded-3">
+                  <div class="row pb-0 pb-xl-4">
+                    <div class="col-md-6 mb-3">
+                      <p>Ship from</p>
+                      <!-- <div class="dropdown">
+                        <button class="btn btn-secondary w-100 text-start" type="button" id="from" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/usa.png" alt="uk" width="30" class="img-fluid me-2"> <span>New York</span>
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="from">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div> -->
+                      <input id="country_selector" class="form-control" type="text">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <p>Ship to</p>
+                      <!-- <div class="dropdown">
+                        <button class="btn btn-secondary w-100 text-start" type="button" id="to" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="assets/images/uk.png" alt="uk" width="30" class="img-fluid me-2"> <span>London</span>
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="to">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div> -->
+                      <input id="country_selector2" class="form-control" type="text">
+                    </div>
+    
+                    <div class="col-md-6 mb-3">
+                      <label for="weight">Weight</label>
+                      <select class="form-control" name="weight" id="weight">
+                        <option value="">1 Lb</option>
+                        <option value="">2 Lb</option>
+                        <option value="">3 Lb</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="weight">Transit</label>
+                      <select class="form-control" name="weight" id="weight">
+                        <option value="">2 days</option>
+                        <option value="">4 days</option>
+                        <option value="">5 days</option>
+                      </select>
+                    </div>
+    
+                    <div class="col-12 mb-3">
+                      <label for="service">Service</label>
+                      <input class="form-control" type="text" placeholder="FedEx Intematimal Priority" id="service">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+  
+            <div class="package w-100 ps-0 ps-xl-4">
+              <div class="row align-items-center gx-0 gx-md-4">
+                <div class="col-md-6">
+                  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked onclick="chooseOne()">
+
+                  <label class="btn p-0 w-100" for="success-outlined" >
+                    <div class="package-card check" id="item1">
+                      <div class="row align-items-center">
+                        <div class="col-3 px-3 px-xl-0">
+                          <img src="assets/images/envelop.png" alt="fedex" class="img-fluid">
+                        </div>
+                        <div class="col-9 text-start">
+                          <h5>FedEx Envelope</h5>
+                          <p class="price">$31.07 <span><s>$88.76</s></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off" onclick="chooseTwo()">
+
+                  <label class="btn p-0 w-100" for="danger-outlined" >
+                    <div class="package-card" id="item2">
+                      <div class="row align-items-center">
+                        <div class="col-3 px-0  px-3 px-xl-0">
+                          <img src="assets/images/fecex.png" alt="fedex" class="img-fluid">
+                        </div>
+                        <div class="col-9">
+                          <h5>Your Packaging</h5>
+                          <p class="price">$53.58 <span><s>$153.09</s></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="pt-3">Save an Extra $22.51 by utilizing a FedEx Envelop instead of your own packaging.</p>
+        </div>
+
+        <div class="col-lg-6 order-xl-2 order-1">
+          <div class="description">
+            <h1 class="section-heading fs-3">Package Type Makes Difference</h1>
+            <p class="py-3">By selecting the appropriate package type, you may
+              frequently reduce delivery costs even more.<br class="d-block d-xl-none"><br class="d-block d-xl-none">
+  
+            Save Smart, Save More.</p>
+            <a href="#" class="btn btn-yellow">Try A Free Quote</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- package delivery ended-->
+
+
+  <!-- international-shipping -->
+  <section class="international-shipping py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="description">
+            <h1 class="section-heading fs-3">International Shipping, Done Right!</h1>
+            <p>DDP (Duty & Taxes Paid Delivery)</p>
+            <ul class="py-4 ps-0 criteria">
+              <li>Hassle-free custom clearance</li>
+              <li>Duty & taxes paid delivery paid by ShipTheDoc</li>
+              <li>Speed up, no delay</li>
+            </ul>
+            <p>Did international shipping frustrate you? NO Need to Worry!<br class="d-block d-xl-none"><br class="d-block d-xl-none">
+  
+              With the DDP (delivery duty paid) service, we not only handle
+              customs clearance but also prepay all duties and taxes for all of
+              your international document shipping to maximize delivery speed.
+              You can relax knowing that everything will be taken care of!
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 pt-3 pt-lg-0">
+          <div class="image text-center">
+            <img src="assets/images/banner-image-2.png" alt="banner-image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+  <!-- international-shipping -->
+
+
+  <!-- feedbsck starts -->
+  <section class="feedback py-5">
+    <div class="container">
+      <div class="section-header pb-4">
+        <h1 class="text-center section-heading fs-3">See What Our Customers Are Saying About ShipTheDoc</h1>
+      </div>
+
+      <div class="feedback-items">
+        <div class="product-menu swiper feedbackSwiper h-100 p-4">
+          <div class="swiper-wrapper h-100">
+            <div class="active h-100 feedback-card shadow swiper-slide text-center">
+              <img src="assets/images/1.png" alt="avatar" class="img-fluid">
+              <p class="py-4">ShipTheDoc made it incredibly simple
+                to create labels and saved me money
+                and time on both domestic and
+                international document shipments.</p>
+                <h4 class="title fs-5">Micheal Joh</h4>
+                <span class="d-inline-block pt-2">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                </span>
+            </div>
+
+            <div class="h-100 feedback-card shadow swiper-slide text-center">
+              <img src="assets/images/2.png" alt="avatar" class="img-fluid">
+              <p class="py-4">I am very pleased to see that
+                ShipTheDoc provides the best value in
+                terms Of ease Of use, cost
+                effectiveness, and quick customer
+                service when shipping documents.</p>
+              
+              <h4 class="title fs-5">Christopher Luis</h4>
+              <span class="d-inline-block pt-2">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </span>
+            </div>
+
+            <div class="h-100 feedback-card shadow swiper-slide text-center">
+              <img src="assets/images/3.png" alt="avatar" class="img-fluid">
+              <p class="py-4">ShipTheDoc is a quick and simple
+                online platform, with a few clicks and
+                you've printed a label with deep
+                discount. I highly recommend them!</p>
+              <h4 class="title fs-5">Erika Irving</h4>
+              <span class="d-inline-block pt-2">
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+                <span><i class="fas fa-star"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- feedbsck ended -->
+
+  <!-- footer started -->
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="main-footer">
+        <div class="row">
+          <div class="col-md-6 pb-4 col-xl-3">
+            <h5 class="text-white pb-3 fs-5">About Us</h5>
+            <ul>
+              <li><a href="#">About ShipTheDoc</a></li>
+              <li><a href="#">Our Advantages</a></li>
+              <li><a href="#">Our Overseas</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 pb-4 pb-xl-0 col-xl-3">
+            <h5 class="text-white pb-3 fs-5">Tools</h5>
+            <ul>
+              <li><a href="#"><i class="far fa-calculator me-2"></i>Get Shipping Estimate</a></li>
+              <li><a href="#"><i class="far fa-search me-2"></i>Track Your Package</a></li>
+              <li><a href="#"><i class="fas fa-user-headset me-2"></i>Help Center</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 pb-4 pb-md-0 pb-xl-0 col-xl-3">
+            <h5 class="text-white pb-3 fs-5">Contact Us</h5>
+            <ul>
+              <li><a href="#"><i class="fas fa-phone-alt me-2"></i>123 3456 903</a></li>
+              <li><a href="#"><i class="far fa-phone-office me-2"></i>123 3456 903</a></li>
+              <li><a href="#"><i class="fal fa-user-headset me-2"></i>help@shipthedoc.com</a></li>
+              <li><i class="fas fa-map-marker-alt me-2"></i>123 New York City, USA</li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <h5 class="text-white pb-3 fs-5">News letter</h5>
+            <p>Be the first who learns about
+              our great promotions!</p>
+            <form class="w-100">
+              <div class="d-flex justify-content-between pt-3 w-100">
+                <input class="p-2 w-75 rounded border-0" type="email" placeholder="Your Email Address">
+                <button type="submit" class="btn btn-yellow text-black d-flex align-items-center ms-1">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4 bg-light">
+
+      <div class="footer bottom">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start pb-2 pb-md-0">
+            <p>Copyright 0 2022 ShipTheDoc</p>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center justify-content-md-end">
+              <a href="#">Terms & Condition</a>
+              <span class="vr mx-3 bg-white"></span>
+              <a href="#">Privacy Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ended -->
+
+ 
+
+
+
+  <!-- script -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/country-picker-flags/js/countrySelect.min.js"></script>
+  <script src="assets/vendor/Swiper-slider/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    $("#country_selector").countrySelect({
+      defaultCountry:"us"
+    })
+    $("#country_selector2").countrySelect({
+      defaultCountry:"uk"
+    })
+  </script>
+  <script>
+    let option1 = document.getElementById("success-outlined");
+    let option2 = document.getElementById("danger-outlined");
+    let card1 = document.getElementById("item1");
+    let card2 = document.getElementById("item2");
+
+    function chooseOne() {
+      if(option1.checked == true){
+        card2.classList.remove("check");
+        card1.classList.add("check");
+      }
+    }
+    function chooseTwo() {
+      if(option2.checked == true){
+        card1.classList.remove("check");
+        card2.classList.add("check");
+      }
+    }
+
+  </script>
+</body>
+</html>

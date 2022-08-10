@@ -1,10 +1,11 @@
-.header{
-   .search-box-wrapper{
-      .search{
+.header {
+   .search-box-wrapper {
+      .search {
          border: 1px solid #c5c5c5;
          border-radius: 25px;
-         padding: 5px 15px;
-         input{
+         padding: 8px 15px;
+
+         input {
             border: none;
             min-width: 280px;
          }
@@ -12,10 +13,11 @@
    }
 
    .navbar-nav {
-      .nav-item{
-         &:not(:last-child){
+      .nav-item {
+         &:not(:last-child) {
             margin-right: 20px;
          }
+
          .nav-link {
             font-weight: 500;
          }

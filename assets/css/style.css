@@ -35,10 +35,13 @@ body {
 
 /*===// end of base css === */
 /*=== layouts css start === */
+.header .navbar-brand {
+  max-width: 170px;
+}
 .header .search-box-wrapper .search {
   border: 1px solid #c5c5c5;
   border-radius: 25px;
-  padding: 8px 15px;
+  padding: 5px 15px;
 }
 .header .search-box-wrapper .search input {
   border: none;
